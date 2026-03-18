@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+body {
+  font-family: "Geist", sans-serif;
+  letter-spacing: -.06em;
+  display: flex;
+  justify-content: center;
+  padding-inline: 1em;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100svh;
+  max-height: 100dvh;
+}
+
+
+.mono {
+  font-size: clamp(.75em, 1.5vw, .875em);
+  font-family: "Geist Mono", monospace;
+}
+
+.form-wrapper form{
+  display: flex;
+  flex-direction: column;
+}
