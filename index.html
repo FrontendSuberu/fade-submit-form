@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400..600&family=Geist:wght@400..600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <title>fade-submit-form</title>
@@ -16,20 +16,22 @@
   <body>
     <main class="form-wrapper">
       <form method="post">
-        <label to="fullName">
+        <label class="form-label" to="fullName">
           <!-- full name -->
           <span class="mono">Your name</span>
-          <input id="fullName" type="text" required />
+          <input id="fullName" class="form-field" placeholder="name goes here" type="text" required />
         </label>
 
         <!-- email -->
-        <label to="email">
+        <label class="form-label" to="email">
           <span class="mono">your email address</span>
-          <input id="email" type="email" required />
+          <input id="email" class="form-field" type="email" placeholder="your@email.com" required />
         </label>
 
         <!-- submit button -->
-        <button role="button" type="submit">submit</button>
+        <button type="submit" id="submitBtn" role="button">
+        submit
+        </button>
       </form>
     </main>
     <script type="module" src="/src/main.js"></script>
