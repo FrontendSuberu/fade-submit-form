@@ -5,21 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <title>fade-submit-form</title>
   </head>
   <body>
     <main class="form-wrapper">
-      <form id="form-element-wrapper" method="post">
-        <label class="form-label" to="fullName">
+      <form id="form-element-wrapper" method="post" novalidate>
+        <label class="form-label" for="fullName">
           <!-- full name -->
           <span class="mono">Your name</span>
-          <span id="warning" class="mono"></span>
+          <span id="warningBlock" class="mono wn-text"></span>
           <input
             id="fullName"
             class="form-field"
@@ -30,10 +30,9 @@
         </label>
 
         <!-- email -->
-        <label class="form-label" to="email">
+        <label class="form-label" for="email">
           <span class="mono">your email address</span>
-          <span id="warning" class="mono"></span>
-
+          <span id="warningBlock" class="mono wn-text"></span>
           <input
             id="email"
             class="form-field"
@@ -44,7 +43,7 @@
         </label>
 
         <!-- submit button -->
-        <button type="submit" id="submitBtn" role="button">submit</button>
+        <button type="submit" class="submitBtn" id="submitBtn" role="button">submit</button>
       </form>
     </main>
     <script type="module" src="/src/main.js"></script>
