@@ -93,7 +93,7 @@ body {
   letter-spacing: -.04em;
   border-radius: 40px;
   font-family: "Geist Mono", monospace;
-  transition: scale .6s var(--bouncy-ease);
+  transition: all .6s var(--bouncy-ease);
 }
 
 .holdExcessive {
@@ -104,6 +104,17 @@ body {
   transition: all .8s var(--bouncy-ease);
 }
 
+#form-status{
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  font-size: 3vw;
+}
+
+
+.hidden{
+  opacity: 0;
+}
 
 
 @media (hover:hover) and (pointer: fine) {
